@@ -1,11 +1,13 @@
 import React from 'react';
-import { Button } from '../../components';
+import { Button, Text, Title } from '../../components';
 
 const Home: React.FC = () => {
   return (
     <div>
       Home
       <Button />
+      <Text />
+      <Title />
     </div>
   );
 };

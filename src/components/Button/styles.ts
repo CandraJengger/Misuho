@@ -3,11 +3,12 @@ import colors from '../../themes/color';
 import spacing from '../../themes/spacing';
 
 interface ButtonProps {
-  primary: boolean;
+  primary?: boolean;
+  fluid?: boolean;
 }
 
-const Button = styled.button<ButtonProps>`
-  width: 100%;
+export const Button = styled.button<ButtonProps>`
+  width: ${(props) => (props.fluid ? '100%' : 'max-content')};
   max-width: 500px;
   padding: 13px 54px;
   border-radius: 100px;
@@ -19,5 +20,3 @@ const Button = styled.button<ButtonProps>`
   color: ${(props) => (props.primary ? colors.secondary : colors.primary)};
   border: 2px solid ${colors.primary};
 `;
-
-export { Button };
