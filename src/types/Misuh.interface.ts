@@ -1,7 +1,7 @@
 interface Misuh {
   id: number;
-  to: string;
-  text: string;
+  name: string;
+  problem: string;
 }
 
 export default Misuh;

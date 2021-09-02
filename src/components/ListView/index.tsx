@@ -1,16 +1,22 @@
 import React from 'react';
 import { Card } from '..';
-import Misuh from '../../types/Misuh';
+import Misuh from '../../types/Misuh.interface';
 
 type Props = {
   data: Array<Misuh>;
+  onDeleteItem: (misuh: Misuh) => void;
 };
 
-const List: React.FC<Props> = ({ data = [] }) => {
+const List: React.FC<Props> = ({ data = [], onDeleteItem }) => {
   return (
     <>
-      {data.map(({ id, to, text }) => (
-        <Card to={to} text={text} key={id} />
+      {data.map((misuh) => (
+        <Card
+          to={misuh.name}
+          text={misuh.problem}
+          key={misuh.id}
+          onClose={() => onDeleteItem(misuh)}
+        />
       ))}
     </>
   );

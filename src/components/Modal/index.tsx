@@ -17,6 +17,7 @@ const ModalComponent: React.FC<Props> = ({
   problem,
   onChangeProblem,
   onClose,
+  onAddNewMisuh,
 }) => {
   return (
     <ModalWrapper open={open}>
@@ -45,7 +46,7 @@ const ModalComponent: React.FC<Props> = ({
         />
       </ModalContent>
       <ModalFooter>
-        <Button text="+ Tambahin" fluid />
+        <Button text="+ Tambahin" fluid onClick={onAddNewMisuh} />
       </ModalFooter>
     </ModalWrapper>
   );

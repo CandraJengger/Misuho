@@ -1,15 +1,15 @@
-import Misuh from '../types/Misuh';
+import Misuh from '../types/Misuh.interface';
 
 const data: Array<Misuh> = [
   {
     id: 1,
-    to: 'Yono',
-    text: 'Asyem, mambengi kwe nyandi ora ronda kihh',
+    name: 'Yono',
+    problem: 'Asyem, mambengi kwe nyandi ora ronda kihh',
   },
   {
     id: 2,
-    to: 'Popo',
-    text: 'Bajilak, Mualah turu mambengi',
+    name: 'Popo',
+    problem: 'Bajilak, Mualah turu mambengi',
   },
 ];
 

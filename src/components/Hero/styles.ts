@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Image = styled.img`
   width: 100%;
-  max-width: 512px;
+  max-width: 420px;
 `;
 
 export const HeroWrapper = styled.div`

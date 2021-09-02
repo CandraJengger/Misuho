@@ -7,6 +7,7 @@ type Props = {
   problem?: string;
   onChangeProblem?: React.ChangeEventHandler<HTMLInputElement> | undefined;
   onClose?: React.MouseEventHandler<HTMLButtonElement> | undefined;
+  onAddNewMisuh?: React.MouseEventHandler<HTMLButtonElement> | undefined;
 };
 
 export default Props;
