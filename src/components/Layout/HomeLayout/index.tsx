@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Title } from '../..';
+import { Button, Gap, Title } from '../..';
 import { Footer, Header, Main, Container } from './styles';
 
 type Props = {
@@ -12,6 +12,7 @@ const HomeLayout: React.FC<Props> = ({ children, addMisuh }) => {
     <Container>
       <Header>
         <Title text="Misuho." />
+        <Gap height="4px" width="4px" />
         <Title subTitle text="Luapin kekesalanmu" />
       </Header>
       <Main>{children}</Main>

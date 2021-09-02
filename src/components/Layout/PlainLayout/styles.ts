@@ -3,7 +3,11 @@ import spacing from '../../../themes/spacing';
 
 export const Container = styled.section`
   display: flex;
-  width: 100vw;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 512px;
+  position: relative;
+  margin: 0 auto;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
