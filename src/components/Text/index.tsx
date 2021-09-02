@@ -1,13 +1,16 @@
 import React from 'react';
-import { MdText } from './styles';
+import { Text } from './styles';
+import Props from './text.props';
 
-const TextComponent = () => {
+const TextComponent: React.FC<Props> = ({
+  strong = true,
+  type = 'md',
+  text,
+}) => {
   return (
-    <MdText>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloremque
-      beatae, totam dolorem, iure molestias quos corrupti quaerat tenetur eaque
-      possimus, labore placeat in at doloribus officia sequi dicta quod?
-    </MdText>
+    <Text type={type} strong={strong}>
+      {text}
+    </Text>
   );
 };
 

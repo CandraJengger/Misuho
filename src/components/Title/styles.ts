@@ -8,6 +8,6 @@ export const Title = styled.h1`
   color: ${colors.primary};
 `;
 
-export const SubTitle = styled(Title)`
+export const SubTitle = styled.h2`
   font-size: ${spacing[4] + 'px'};
 `;
