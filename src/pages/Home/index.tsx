@@ -38,6 +38,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     getAllMisuh()(misuhDispatch);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
