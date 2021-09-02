@@ -7,14 +7,15 @@ interface Modal {
 
 export const ModalWrapper = styled.div<Modal>`
   position: fixed;
-  top: ${(props) => (props.open ? 0 : '-100%')};
+  top: ${({ open }) => (open ? 0 : '-100%')};
+  opacity: ${({ open }) => (open ? '100%' : '0')};
   background: ${colors.secondary};
   right: 0;
   bottom: 0;
   left: 0;
   transition: all 350ms ease-in;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   max-width: 512px;
   margin: 0 auto;
   padding: 16px 24px 20px;
