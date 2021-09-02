@@ -23,7 +23,7 @@ export const Footer = styled.footer`
   width: 100%;
   padding: 20px 24px;
   background: transparent;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
