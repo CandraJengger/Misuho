@@ -7,7 +7,7 @@ const Home: React.FC = () => {
       Home
       <Button />
       <Text text="casasa" />
-      <Title />
+      <Title text="Misuho." />
       <TextInput label="Buat Siapa ?" placeholder="Tulis namanya" />
       <Card
         to="Guntur Bagus"

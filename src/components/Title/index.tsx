@@ -1,8 +1,15 @@
 import React from 'react';
-import { Title } from './styles';
+import { SubTitle, SuperTitle, Title } from './styles';
+import Props from './title.props';
 
-const TitleComponent = () => {
-  return <Title>Misuho.</Title>;
+const TitleComponent: React.FC<Props> = ({ text, superTitle, subTitle }) => {
+  return superTitle ? (
+    <SuperTitle>{text}</SuperTitle>
+  ) : subTitle ? (
+    <SubTitle>{text}</SubTitle>
+  ) : (
+    <Title>{text}</Title>
+  );
 };
 
 export default TitleComponent;

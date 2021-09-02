@@ -1,7 +1,7 @@
 type Props = {
-  type?: 'sm' | 'md' | 'xl' | '2xl';
-  strong?: boolean;
   text: string;
+  superTitle?: boolean;
+  subTitle?: boolean;
 };
 
 export default Props;

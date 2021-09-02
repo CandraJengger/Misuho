@@ -6,3 +6,4 @@ import Card from './Card';
 import Gap from './Gap';
 
 export { Button, Text, Card, Title, TextInput, Gap };
+export * from './Layout';
