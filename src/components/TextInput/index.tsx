@@ -1,17 +1,22 @@
 import React from 'react';
-import { Label, Input, TextInputWrapper } from './styles';
+import { Label, Input, TextInputWrapper, TextArea } from './styles';
 import Props from './textInput.props';
 
-const TextInputComponent: React.FC<Props> = ({
+const TextInputComponent: React.FC<Props & Record<string, any>> = ({
   label,
   value,
-  onChange,
   placeholder,
+  type = 'input',
+  ...props
 }) => {
   return (
     <TextInputWrapper>
       <Label>{label}</Label>
-      <Input placeholder={placeholder} value={value} onChange={onChange} />
+      {type === 'input' ? (
+        <Input placeholder={placeholder} value={value} {...props} />
+      ) : (
+        <TextArea placeholder={placeholder} value={value} {...props} />
+      )}
     </TextInputWrapper>
   );
 };

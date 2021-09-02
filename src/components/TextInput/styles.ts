@@ -22,3 +22,13 @@ export const Input = styled.input`
   border: 2px solid ${colors.primary};
   box-shadow: 5px 5px 0px -2px ${colors.primary};
 `;
+
+export const TextArea = styled.textarea`
+  color: ${colors.primary};
+  height: 120px;
+  font-size: ${spacing[3] + 'px'};
+  padding: 12px;
+  font-weight: 700;
+  border: 2px solid ${colors.primary};
+  box-shadow: 5px 5px 0px -2px ${colors.primary};
+`;

@@ -13,7 +13,10 @@ export const ModalWrapper = styled.div<Modal>`
   bottom: 0;
   left: 0;
   transition: all 350ms ease-in;
+  width: 100%;
   height: 100vh;
+  max-width: 512px;
+  margin: 0 auto;
   padding: 16px 24px 20px;
   display: flex;
   flex-direction: column;

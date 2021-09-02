@@ -40,6 +40,7 @@ const ModalComponent: React.FC<Props> = ({
           label="Misuhanya apa?"
           placeholder="Tulis kekesalanmu"
           value={problem}
+          type="textarea"
           onChange={onChangeProblem}
         />
       </ModalContent>
