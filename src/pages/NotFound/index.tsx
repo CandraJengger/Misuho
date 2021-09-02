@@ -1,16 +1,13 @@
 import React from 'react';
-import { Button, Gap, PlainLayout, Text, Title } from '../../components';
-import { useHistory } from 'react-router-dom';
+import { Gap, Link, PlainLayout, Text, Title } from '../../components';
 
 const NotFound: React.FC = () => {
-  const history = useHistory();
-
   return (
     <PlainLayout>
-      <Text type="2xl" strong text="Waduh. Lagi error, nih." />
+      <Text type="2xl" strong text="Waduh. Halaman kosong, nih." />
       <Title text="Misuhnya tolong ditahan dulu." superTitle />
       <Gap height="32px" width="100px" />
-      <Button text="Kembali" onClick={() => history.push('/')} />
+      <Link text="Kembali aja yuk." to="/" />
     </PlainLayout>
   );
 };

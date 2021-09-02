@@ -8,6 +8,7 @@ export const CardWrapper = styled.article`
   border: 2px solid ${colors.primary};
   box-shadow: 5px 5px 0px -2px ${colors.primary};
   min-height: 75px;
+  margin-bottom: ${spacing[0] + 'px'};
 `;
 
 export const CardContent = styled.div`

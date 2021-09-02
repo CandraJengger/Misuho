@@ -1,20 +1,12 @@
 import React from 'react';
-import { Button, Card, Text, TextInput, Title } from '../../components';
+import { Hero, HomeLayout, ListView } from '../../components';
+import data from '../../data';
 
 const Home: React.FC = () => {
   return (
-    <div>
-      Home
-      <Button />
-      <Text text="casasa" />
-      <Title text="Misuho." />
-      <TextInput label="Buat Siapa ?" placeholder="Tulis namanya" />
-      <Card
-        to="Guntur Bagus"
-        text="Good Day"
-        onClose={() => console.log('close')}
-      />
-    </div>
+    <HomeLayout>
+      {data.length !== 0 ? <ListView data={data} /> : <Hero />}
+    </HomeLayout>
   );
 };
 

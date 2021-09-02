@@ -10,7 +10,7 @@ interface ButtonProps {
 export const Button = styled.button<ButtonProps>`
   width: ${(props) => (props.fluid ? '100%' : 'max-content')};
   max-width: 500px;
-  padding: 13px 54px;
+  padding: 13px 24px;
   border-radius: 100px;
   font-size: ${spacing[2] + 'px'};
   font-weight: 700;

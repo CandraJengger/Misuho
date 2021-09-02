@@ -14,6 +14,6 @@ export const SuperTitle = styled(Title)`
 `;
 
 export const SubTitle = styled.h2`
-  font-size: ${spacing[4] + 'px'};
+  font-size: ${spacing[2] + 'px'};
   margin: 0;
 `;
